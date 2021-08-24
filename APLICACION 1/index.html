@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de interes financiero</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="calculator.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__title">Calculadora de interes</h1>
+    </header>
+    <main class="main">
+        <div class="calc">
+            <input type="number" placeholder="Digite el capital inicial" class="calc__input" autofocus>
+            <input type="number" placeholder="Digite la tasa de interes" class="calc__input">
+            <input type="number" placeholder="Digite el periodo de tiempo" class="calc__input">
+
+            <div class="select">
+                <label for="typeInterest" class="select__label">Tipo de interes</label>
+                <input type="radio" name="typeInterest" class="select__type" checked>Simple
+                <input type="radio" name="typeInterest" class="select__type">Compuesto
+            </div>
+
+            <button class="calc__btn">Calcular</button>
+
+            <div class="result">
+                <h3 class="result__display">Resultado: $0.00</h3>
+                <button class="result__clean-btn"><i class="fas fa-trash-alt"></i></button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
